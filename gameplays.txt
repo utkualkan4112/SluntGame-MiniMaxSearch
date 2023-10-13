@@ -1,0 +1,313 @@
+﻿First Game is 2x2 matrix with maximum depth
+Player 1: inputs
+Player 2:Computer
+Current board represents diagonal line placement
+Point board represents corners
+Current board:
+[None, None]
+[None, None]
+Point Board:
+[None, (1, 0), None]
+[None, (2, 0), (2, 0)]
+[(3, 0), (1, 0), (2, 0)]
+
+It's Player 1's turn.
+Enter the row: 0
+Enter the column: 0
+Player 1 moved: (0, 0, '/')
+Current board:
+['/', None]
+[None, None]
+Point Board:
+[None, (1, 1), None]
+[None, (2, 0), (2, 0)]
+[(3, 0), (1, 0), (2, 0)]
+
+It's Player 2's turn.
+Player 2 moved: (1, 0, '\\')
+Current board:
+['/', None]
+['\\', None]
+Point Board:
+[None, (1, 1), None]
+[None, (2, 0), (2, 0)]
+[(3, 0), (1, 2), (2, 0)]
+
+It's Player 1's turn.
+Enter the row: 0
+Enter the column: 1
+Player 1 moved: (0, 1, '/')
+Current board:
+['/', '/']
+['\\', None]
+Point Board:
+[None, (1, 1), None]
+[None, (2, 0), (2, 0)]
+[(3, 0), (1, 2), (2, 0)]
+
+It's Player 2's turn.
+Player 2 moved: (1, 1, '\\')
+Current board:
+['/', '/']
+['\\', '\\']
+Point Board:
+[None, (1, 1), None]
+[None, (2, 2), (2, 0)]
+[(3, 0), (1, 2), (2, 0)]
+Game over! The winner is Player 2
+
+First Game is 4x4 matrix with depth limit = 9
+
+Current board:
+[None, None, None, None]
+[None, None, None, None]
+[None, None, None, None]
+[None, None, None, None]
+Point Board:
+[(1, 0), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 0), None, None]
+[(1, 0), (1, 0), (2, 0), (3, 0), None]
+
+It's Player 1's turn.
+Enter the row: 3
+Enter the column: 1
+Player 1 moved: (3, 1, '/')
+Current board:
+[None, None, None, None]
+[None, None, None, None]
+[None, None, None, None]
+[None, '/', None, None]
+Point Board:
+[(1, 0), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 0), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 2's turn.
+Player 2 moved: (0, 0, '\\')
+Current board:
+['\\', None, None, None]
+[None, None, None, None]
+[None, None, None, None]
+[None, '/', None, None]
+Point Board:
+[(1, 2), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 0), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 1's turn.
+Enter the row: 3
+Enter the column: 0
+Player 1 moved: (3, 0, '/')
+Current board:
+['\\', None, None, None]
+[None, None, None, None]
+[None, None, None, None]
+['/', '/', None, None]
+Point Board:
+[(1, 2), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 2's turn.
+Player 2 moved: (3, 3, '\\')
+Current board:
+['\\', None, None, None]
+[None, None, None, None]
+[None, None, None, None]
+['/', '/', None, '\\']
+Point Board:
+[(1, 2), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 1's turn.
+Enter the row: 2
+Enter the column: 0
+Player 1 moved: (2, 0, '/')
+Current board:
+['\\', None, None, None]
+[None, None, None, None]
+['/', None, None, None]
+['/', '/', None, '\\']
+Point Board:
+[(1, 2), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 2's turn.
+Player 2 moved: (2, 3, '\\')
+Current board:
+['\\', None, None, None]
+[None, None, None, None]
+['/', None, None, '\\']
+['/', '/', None, '\\']
+Point Board:
+[(1, 2), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 1's turn.
+Enter the row: 3
+Enter the column: 2
+Player 1 moved: (3, 2, '/')
+Current board:
+['\\', None, None, None]
+[None, None, None, None]
+['/', None, None, '\\']
+['/', '/', '/', '\\']
+Point Board:
+[(1, 2), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 2's turn.
+Player 2 moved: (1, 0, '\\')
+Current board:
+['\\', None, None, None]
+['\\', None, None, None]
+['/', None, None, '\\']
+['/', '/', '/', '\\']
+Point Board:
+[(1, 2), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 1's turn.
+Enter the row: 2
+Enter the column: 1
+Player 1 moved: (2, 1, '/')
+Current board:
+['\\', None, None, None]
+['\\', None, None, None]
+['/', '/', None, '\\']
+['/', '/', '/', '\\']
+Point Board:
+[(1, 2), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 2's turn.
+Player 2 moved: (2, 2, '\\')
+Current board:
+['\\', None, None, None]
+['\\', None, None, None]
+['/', '/', '\\', '\\']
+['/', '/', '/', '\\']
+Point Board:
+[(1, 2), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 1's turn.
+Enter the row: 1
+Enter the column: 3
+Player 1 moved: (1, 3, '/')
+Current board:
+['\\', None, None, None]
+['\\', None, None, '/']
+['/', '/', '\\', '\\']
+['/', '/', '/', '\\']
+Point Board:
+[(1, 2), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 2's turn.
+Player 2 moved: (0, 3, '\\')
+Current board:
+['\\', None, None, '\\']
+['\\', None, None, '/']
+['/', '/', '\\', '\\']
+['/', '/', '/', '\\']
+Point Board:
+[(1, 2), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 1's turn.
+Enter the row: 0
+Enter the column: 2
+Player 1 moved: (0, 2, '/')
+Current board:
+['\\', None, '/', '\\']
+['\\', None, None, '/']
+['/', '/', '\\', '\\']
+['/', '/', '/', '\\']
+Point Board:
+[(1, 2), (1, 0), None, None, None]
+[(2, 0), (3, 0), (2, 0), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 2's turn.
+Player 2 moved: (0, 1, '\\')
+Current board:
+['\\', '\\', '/', '\\']
+['\\', None, None, '/']
+['/', '/', '\\', '\\']
+['/', '/', '/', '\\']
+Point Board:
+[(1, 2), (1, 2), None, None, None]
+[(2, 0), (3, 0), (2, 2), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 1's turn.
+Enter the row: 1
+Enter the column: 1
+Player 1 moved: (1, 1, '/')
+Current board:
+['\\', '\\', '/', '\\']
+['\\', '/', None, '/']
+['/', '/', '\\', '\\']
+['/', '/', '/', '\\']
+Point Board:
+[(1, 2), (1, 2), None, None, None]
+[(2, 0), (3, 0), (2, 2), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+It's Player 2's turn.
+Player 2 moved: (1, 2, '\\')
+Current board:
+['\\', '\\', '/', '\\']
+['\\', '/', '\\', '/']
+['/', '/', '\\', '\\']
+['/', '/', '/', '\\']
+Point Board:
+[(1, 2), (1, 2), None, None, None]
+[(2, 0), (3, 0), (2, 2), (2, 0), None]
+[None, None, None, None, (3, 0)]
+[None, None, (1, 1), None, None]
+[(1, 1), (1, 1), (2, 0), (3, 0), None]
+
+Game over! The winner is Player 2
